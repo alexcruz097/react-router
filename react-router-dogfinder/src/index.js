@@ -5,14 +5,20 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Dog from "./Dog";
+import ColorApp from "./ColorsApp";
+import Color from "./Color";
+import AddColor from "./AddColor";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />}></Route>
+        <Route path="/colors" element={<ColorApp />}></Route>
         <Route path="/dogs/:name" element={<Dog />}></Route>
+        {/* colors route */}
+        <Route path="/colors/:name" element={<Color/>}></Route>
+        <Route path="/colors/addcolor" element={<AddColor/>}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

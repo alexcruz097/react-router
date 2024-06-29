@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +12,39 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.hero{
+  background-color: #262626;
+  color: white;
+  text-align: center;
+padding: 1rem 0;
+}
+.hero h1{
+  margin: 0;
+}
+.add-color-link{
+  color: white;
+
+}
+
+.colors-container{
+  text-align: center;
+}
+.color-list {
+  color: black;
+  font-size: 1.3rem;
+  padding: 0;
+  margin: 0;
+
+}
+
+/* Color.jsx */
+.color-container{
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+}
+.color-container p{
+  color: white;
 }
